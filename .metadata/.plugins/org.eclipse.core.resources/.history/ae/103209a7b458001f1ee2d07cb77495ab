@@ -1,0 +1,31 @@
+package com.practice.service;
+
+import java.util.HashSet;
+import java.util.Set;
+
+public class InterviewQuestion {
+
+	public static void main(String[]args) {
+		
+		String word="Java is easiest and Java is funny language and java is dangrious language";
+		System.out.println("Original String is :"+ word);
+		String removeWord = removeWord(word);
+		System.out.println("New String is:"+removeWord);
+	}
+	public static String removeWord(String word) {
+		String lowerCase = word.toLowerCase();
+		String[] splitString = lowerCase.split("\\s");
+		
+		Set<String> set = new HashSet<>();
+		StringBuffer sb = new StringBuffer();
+		
+		for(String result:splitString) {
+			if(!set.contains(result)) {
+				set.add(result);
+				sb.append(result).append(" ");
+			}
+		}
+		return sb.toString().trim();
+	}	
+		
+}

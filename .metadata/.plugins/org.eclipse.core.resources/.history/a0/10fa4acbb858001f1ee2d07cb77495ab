@@ -1,0 +1,22 @@
+package com.practice.service;
+
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Set;
+
+public class InterviewQuestion {
+
+	public static void main(String[]args) {
+		
+	Map<Integer,String>	map= new HashMap<>();
+	map.put(12, "Ashu");
+	map.put(18, "Abdul");
+	map.put(19, "Ani");
+	map.put(10, "Ashu");
+	
+	for(int i: map.keySet()) {
+		System.out.println(i+" "+map.get(i));
+	}
+	
+	}
+}

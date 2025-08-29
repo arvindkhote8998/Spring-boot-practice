@@ -1,0 +1,27 @@
+package com.practice.service;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class InterviewQuestion {
+
+	public static void main(String[]args) {
+		
+		List<String> list= new ArrayList<>();
+		list.add("Arvind");
+		list.add("vedika");
+		list.add("Arun");
+		list.add("Sanket");
+		
+		list.forEach(e->System.out.println(e));
+		System.out.println("_______Another Way_______");
+		for(String result:list) {
+			System.out.println(result);
+		}
+		System.out.println("_______Another Way_______");
+		
+		for(int i=0;i<list.size()-1;i++) {
+			System.out.println(i);
+		}
+	}		
+}

@@ -1,0 +1,25 @@
+package com.practice;
+
+import java.util.ArrayList;
+import java.util.LinkedHashSet;
+import java.util.List;
+import java.util.Set;
+
+public class Conversion {
+
+	public static void main(String[] args) {
+		List<String> list = new ArrayList<>();
+		list.add("Arvind");
+		list.add("Arvind");
+		list.add("baja");
+		list.add("nilesh");
+
+		Set<String> set = new LinkedHashSet<>(list);
+		set.addAll(list);
+		list.clear();
+		list.addAll(set);
+		System.out.println(list);
+
+	}
+
+}

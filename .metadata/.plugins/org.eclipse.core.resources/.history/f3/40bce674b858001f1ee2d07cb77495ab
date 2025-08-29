@@ -1,0 +1,29 @@
+package com.practice.service;
+
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Map;
+import java.util.Map.Entry;
+import java.util.Set;
+
+public class InterviewQuestion {
+
+	public static void main(String[]args) {
+		
+		Map<Integer,String>map=new HashMap<>();
+		map.put(1, "Arvind");
+		map.put(11, "Arun");
+		map.put(14, "Aniket");
+		map.put(15, "Ak");
+		
+		for(Map.Entry<Integer, String> result:map.entrySet()) {
+			System.out.println(result.getKey()+" "+result.getValue());
+		}
+		System.out.println("________Another way_______");
+		Iterator<Entry<Integer, String>> iterator = map.entrySet().iterator();
+		while(iterator.hasNext()) {
+			Entry<Integer, String> next = iterator.next();
+			System.out.println(next.getKey()+" "+next.getValue());
+		}
+	}		
+}

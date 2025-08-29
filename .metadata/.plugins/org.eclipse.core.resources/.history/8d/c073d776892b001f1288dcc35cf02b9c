@@ -1,0 +1,21 @@
+package com.practice;
+
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
+
+public class Test {
+
+	public static void main(String[] args) {
+		
+		Student student = new Student("Arvind",12,"234");
+		Student student1 = new Student("Govind",10,"234");
+		Student student3 = new Student("sanu",5,"234");
+		
+		List<Student> list = Arrays.asList(student,student1,student3);
+		System.out.print(Collections.sort(list));
+		
+
+	}
+
+}

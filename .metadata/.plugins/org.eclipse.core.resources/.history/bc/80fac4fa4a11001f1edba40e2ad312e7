@@ -1,0 +1,55 @@
+package com.practice;
+
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.LinkedHashSet;
+import java.util.List;
+import java.util.TreeSet;
+
+public class ListExample {
+
+	public static void main(String[] args) {
+		
+		List<String> list = new ArrayList<>();
+		list.add("Arvind");
+		list.add("Arvind");
+		list.add("Shila");
+		list.add(null);
+		list.add(null);
+		list.forEach(e->{
+			System.out.println(e);
+		});
+		
+		System.out.println("------Set Example--------");
+		LinkedHashSet<String> set = new LinkedHashSet<String>();
+		set.add("Zakir");
+		set.add("Arvind");
+		set.add("Arvind");
+		set.add(null);
+		set.add(null);
+		set.add("Sanket");
+		set.forEach(e->{
+			System.out.println(e);
+		});
+		System.out.println("------ HashSet Example -----------");
+		HashSet<String> hashset= new HashSet<String>();
+		hashset.add("john");
+		hashset.add(null);
+		hashset.add(null);
+		hashset.add("Arvind");
+		hashset.add("Govind");
+		hashset.forEach(e->{
+			System.out.println(e);
+		});
+		System.out.println("------Tree Set---------");
+		TreeSet<String> treeset = new TreeSet<>();
+		treeset.add("Zaker");
+		treeset.add("Arvind");
+		treeset.add("Sanket");
+		treeset.add("babu");
+		treeset.forEach(e->{
+			System.out.println(e);
+		});
+	}
+
+}
